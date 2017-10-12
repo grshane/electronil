@@ -1,0 +1,55 @@
+uuid: 5a6fbd98-8ab4-41fa-a2d4-da619708e489
+langcode: he
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.prdct_categories.field_tmwnt_qtgwryh
+    - image.style.thumbnail
+    - taxonomy.vocabulary.prdct_categories
+  module:
+    - image
+    - path
+    - text
+id: taxonomy_term.prdct_categories.default
+targetEntityType: taxonomy_term
+bundle: prdct_categories
+mode: default
+content:
+  description:
+    type: text_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_tmwnt_qtgwryh:
+    weight: 31
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

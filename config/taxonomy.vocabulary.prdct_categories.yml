@@ -1,0 +1,9 @@
+uuid: e313c680-ff4a-4644-8b67-025dad7a2a19
+langcode: he
+status: true
+dependencies: {  }
+name: קטגוריות
+vid: prdct_categories
+description: ''
+hierarchy: 1
+weight: 0

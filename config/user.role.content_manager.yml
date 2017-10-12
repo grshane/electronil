@@ -1,0 +1,14 @@
+uuid: a7fd4ed0-4ea3-4713-a83a-5ed3d345ae9e
+langcode: he
+status: true
+dependencies: {  }
+id: content_manager
+label: 'Content manager'
+weight: 3
+is_admin: null
+permissions:
+  - 'administer taxonomy'
+  - 'administer taxonomy_term display'
+  - 'delete terms in prdct_categories'
+  - 'edit terms in prdct_categories'
+  - 'view the administration theme'

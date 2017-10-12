@@ -1,0 +1,9 @@
+uuid: 19f459de-7a0d-4eb9-828a-bd1a431de164
+langcode: he
+status: true
+dependencies: {  }
+name: 'ציוד לתהליכי הלחמה'
+vid: zywd_lthlyky_hlhmh
+description: ''
+hierarchy: 0
+weight: 0

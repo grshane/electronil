@@ -1,0 +1,11 @@
+uuid: 978434be-255d-4e8c-9e67-71b00beb55c0
+langcode: he
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.zywd_lthlyky_hlhmh
+id: taxonomy_term.zywd_lthlyky_hlhmh
+target_entity_type_id: taxonomy_term
+target_bundle: zywd_lthlyky_hlhmh
+default_langcode: site_default
+language_alterable: false

@@ -1,5 +1,5 @@
 uuid: b2ba9987-8609-4785-82d2-418b3c489be8
-langcode: en
+langcode: he
 status: true
 dependencies:
   config:
@@ -56,6 +56,13 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
   path:
     type: path
     weight: 30
@@ -69,6 +76,13 @@ content:
     weight: 15
     region: content
     third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 121
+    third_party_settings: {  }
+    region: content
   sticky:
     type: boolean_checkbox
     settings:
