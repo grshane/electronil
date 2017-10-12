@@ -1,0 +1,9 @@
+name: electronil
+recipe: pantheon
+config:
+  framework: drupal8
+  env: dev
+  site: electronil
+  id: 17d8094e-ddfb-4032-83e4-771bdf4a36d2
+  # Optionally activate xdebug
+  xdebug: true
