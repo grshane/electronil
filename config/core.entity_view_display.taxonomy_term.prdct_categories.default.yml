@@ -1,0 +1,33 @@
+uuid: 40a29e6f-e3d3-4e2d-9911-4a8e98080e0a
+langcode: he
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.prdct_categories.field_tmwnt_qtgwryh
+    - taxonomy.vocabulary.prdct_categories
+  module:
+    - image
+    - text
+id: taxonomy_term.prdct_categories.default
+targetEntityType: taxonomy_term
+bundle: prdct_categories
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_tmwnt_qtgwryh:
+    weight: 1
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  langcode: true

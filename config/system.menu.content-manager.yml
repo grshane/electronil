@@ -1,0 +1,8 @@
+uuid: 3a4b04a6-9843-4f71-936d-3931fccc489d
+langcode: he
+status: true
+dependencies: {  }
+id: content-manager
+label: 'Content manager'
+description: ''
+locked: false
