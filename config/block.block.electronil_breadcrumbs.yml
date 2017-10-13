@@ -1,0 +1,22 @@
+uuid: cd3fb6b5-a2c8-4eba-bdcb-285b46f15958
+langcode: he
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - electronil
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: electronil_breadcrumbs
+theme: electronil
+region: navigation
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

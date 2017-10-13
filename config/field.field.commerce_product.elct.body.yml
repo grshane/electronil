@@ -1,0 +1,22 @@
+uuid: adcc3253-c403-4aa8-9f55-8f17ea877bd2
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.elct
+    - field.storage.commerce_product.body
+  module:
+    - text
+id: commerce_product.elct.body
+field_name: body
+entity_type: commerce_product
+bundle: elct
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: null
+settings:
+  display_summary: false
+field_type: text_with_summary

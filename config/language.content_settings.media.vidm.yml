@@ -1,0 +1,11 @@
+uuid: 19cb7abd-bfb6-47c3-a675-0d8ef5d4d719
+langcode: en
+status: true
+dependencies:
+  config:
+    - media_entity.bundle.vidm
+id: media.vidm
+target_entity_type_id: media
+target_bundle: vidm
+default_langcode: site_default
+language_alterable: false
