@@ -1,0 +1,20 @@
+uuid: 55e2f23a-32aa-4800-93e7-af967f83cd98
+langcode: he
+status: true
+dependencies:
+  theme:
+    - electronil
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: electronil_page_title
+theme: electronil
+region: content
+weight: -50
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

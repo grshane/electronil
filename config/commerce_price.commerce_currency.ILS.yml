@@ -1,0 +1,9 @@
+uuid: 47284eb9-9af6-4606-92ee-630162cab151
+langcode: he
+status: true
+dependencies: {  }
+currencyCode: ILS
+name: 'שקל חדש'
+numericCode: '376'
+symbol: ₪
+fractionDigits: 2

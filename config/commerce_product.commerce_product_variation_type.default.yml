@@ -1,0 +1,11 @@
+uuid: 17ef9758-70b7-40d0-a9ba-0cee97dab755
+langcode: he
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: QPuFH9E4612ox18hXdUXL8FhU021rCvOtYISSmvMQzc
+id: default
+label: Default
+orderItemType: default
+generateTitle: true
+traits: {  }

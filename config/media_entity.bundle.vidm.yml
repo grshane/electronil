@@ -1,0 +1,12 @@
+uuid: fa15fd65-9fa1-402e-9c45-9aa38393edc8
+langcode: en
+status: true
+dependencies: {  }
+id: vidm
+label: 'Video Embed'
+description: 'Used for embedding videos.'
+type: generic
+queue_thumbnail_downloads: false
+new_revision: false
+type_configuration: {  }
+field_map: {  }

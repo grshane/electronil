@@ -1,0 +1,10 @@
+uuid: 462155b0-5574-4fcc-9ba6-524e3c618313
+langcode: en
+status: true
+dependencies: {  }
+id: elct
+label: 'Electron catalog'
+description: ''
+variationType: default
+injectVariationFields: true
+traits: {  }
