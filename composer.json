@@ -43,6 +43,7 @@
     "drupal/video_embed_field": "^1.5",
     "drupal/webform": "^5.0@beta",
     "drush/drush": "~8",
+    "fourkitchens/emulsify": "dev-master",
     "rvtraveller/qs-composer-installer": "^1.1",
     "webflo/drupal-core-strict": "^8"
   },

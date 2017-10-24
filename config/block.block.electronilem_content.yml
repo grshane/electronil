@@ -1,0 +1,22 @@
+uuid: 1ed7b4e1-e35d-4289-91f7-e3c9f470ca88
+langcode: he
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - electronilem
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: electronilem_content
+theme: electronilem
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }
