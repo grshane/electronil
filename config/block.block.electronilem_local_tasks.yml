@@ -1,0 +1,22 @@
+uuid: 6c3322eb-29a5-46b4-aaf9-1fa20801d6c8
+langcode: he
+status: true
+dependencies:
+  theme:
+    - electronilem
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: electronilem_local_tasks
+theme: electronilem
+region: content
+weight: -40
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

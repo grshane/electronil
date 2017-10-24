@@ -1,0 +1,25 @@
+uuid: 56c05a80-e17c-4160-b903-3b6844651f8d
+langcode: he
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - electronilem
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: electronilem_branding
+theme: electronilem
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }
