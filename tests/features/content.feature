@@ -23,7 +23,7 @@ Feature: Content
     | First article  |
     | Second article |
     And I am logged in as a user with the "administrator" role
-    When I go to "admin/content"
+    When I go to "en/admin/content"
     Then I should see "Page one"
     And I should see "Page two"
     And I should see "First article"
@@ -54,7 +54,7 @@ Feature: Content
     | name     | mail            | status |
     | Joe User | joe@example.com | 1      |
     And I am logged in as a user with the "administrator" role
-    When I visit "admin/people"
+    When I visit "en/admin/people"
     Then I should see the link "Joe User"
 
   @api
@@ -80,7 +80,7 @@ Feature: Content
     | Tag one |
     | Tag two |
     And I am logged in as a user with the "administrator" role
-    When I go to "admin/structure/taxonomy/manage/tags/overview"
+    When I go to "en/admin/structure/taxonomy/manage/tags/overview"
     Then I should see "Tag one"
     And I should see "Tag two"
 
