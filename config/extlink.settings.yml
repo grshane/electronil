@@ -1,0 +1,11 @@
+extlink_include: ''
+extlink_exclude: ''
+extlink_alert_text: 'You are about to leave our website and view the content of an external website. We cannot be held responsible for the content of external websites.'
+extlink_alert: true
+extlink_target: true
+extlink_subdomains: true
+extlink_mailto_class: mailto
+extlink_img_class: false
+extlink_class: ext
+extlink_css_exclude: ''
+extlink_css_explicit: ''
