@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "bf25866ceaed30153c62800b82f104be",
+    "content-hash": "05cd3565b01a4d35aae6dbc1697a1b75",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -4440,16 +4440,16 @@
         },
         {
             "name": "fourkitchens/emulsify",
-            "version": "dev-master",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fourkitchens/emulsify.git",
-                "reference": "774e73be99ebc942a2d5534112da260fc632bb26"
+                "reference": "1bcbc16be10a3e6646a78aab84084a2fa9188ad1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fourkitchens/emulsify/zipball/774e73be99ebc942a2d5534112da260fc632bb26",
-                "reference": "774e73be99ebc942a2d5534112da260fc632bb26",
+                "url": "https://api.github.com/repos/fourkitchens/emulsify/zipball/1bcbc16be10a3e6646a78aab84084a2fa9188ad1",
+                "reference": "1bcbc16be10a3e6646a78aab84084a2fa9188ad1",
                 "shasum": ""
             },
             "require": {
@@ -4483,7 +4483,7 @@
             ],
             "description": "Project template for Drupal 8 themes",
             "homepage": "http://emulsify.info",
-            "time": "2017-10-09T14:39:42+00:00"
+            "time": "2017-10-25T14:32:18+00:00"
         },
         {
             "name": "gabordemooij/redbean",
