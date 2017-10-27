@@ -17,6 +17,7 @@ rtl:
     theme:
       '//fonts.googleapis.com/css?family=Heebo': { type: external, minified: true }
       mystuff/hebrew-font.css: {}
+      mystuff/rtl.css: {}
       # css/bootstrap-rtl.min.css: {}
 
 ltr:
