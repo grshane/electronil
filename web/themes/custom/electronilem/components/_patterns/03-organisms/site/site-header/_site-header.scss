@@ -1,1 +1,21 @@
-//  Empty
+.header {
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    display: flex;
+    // direction: rtl;
+    grid-template-areas: "sidebar content sidebar";
+    grid-template-columns: 1fr 1170px 1fr;
+  }
+
+  .header__logo {
+    grid-area: content;
+  }
+
+
+}

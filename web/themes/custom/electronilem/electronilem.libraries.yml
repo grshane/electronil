@@ -9,3 +9,30 @@ main_menu:
     dist/02-molecules/menus/main-menu/main-menu.js: {}
   dependencies:
     - core/drupal
+
+
+rtl:
+  version: 3.3.4
+  css:
+    theme:
+      '//fonts.googleapis.com/css?family=Heebo': { type: external, minified: true }
+      mystuff/hebrew-font.css: {}
+      # css/bootstrap-rtl.min.css: {}
+
+ltr:
+  version: 3.3.4
+  css:
+    theme:
+      '//fonts.googleapis.com/css?family=Open+Sans:300,400,700': { type: external, minified: true }
+      mystuff/english-font.css: {}
+
+font-awesome:
+  remote: https://fortawesome.github.io/Font-Awesome/
+  version: 4.7.0
+  license:
+    name: MIT
+    url: https://fortawesome.github.io/Font-Awesome/license/
+    gpl-compatible: true
+  css:
+    theme:
+      https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css: { type: external, minified: true }
