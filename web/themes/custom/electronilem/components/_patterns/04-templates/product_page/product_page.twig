@@ -1,0 +1,32 @@
+<div class="product">
+  {% include "@atoms/02-text/00-headings/_heading.twig" with {
+    "heading_level": 1,
+    "heading": "david Title",
+    "heading_modifiers": ["margin"],
+  } %}
+
+    <div class="prdt-sku">
+        <span class="sku-label">{{ "מקט"  }}</span>:
+        <span class="sku-value">55555555555</span>
+    </div>
+
+    <div class="prdt-desc">
+        לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית להאמית קרהשק סכעיט דז מא, מנכם למטכין נשואי מנורך. גולר מונפרר סוברט לורם שבצק יהול, לכנוץ בעריר גק ליץ, הועניב היושבב שערש שמחויט - שלושע ותלברו חשלו שעותלשך וחאית נובש ערששף. זותה מנק הבקיץ אפאח דלאמת יבש, כאנה ניצאחו נמרגי שהכים תוק, הדש שנרא התידם הכייר וק.
+    </div>
+
+    {% include "@atoms/02-text/00-headings/_heading.twig" with {
+    "heading_level": 3,
+    "heading": "תכונות נבחרות",
+    "heading_modifiers": ["margin"],
+    } %}
+
+    {% include "@atoms/03-lists/00-ul.twig" with {
+        "list_item_label": "li-label",
+        "list_item_content": "li-content"
+    }
+    %}
+
+
+
+
+</div>
