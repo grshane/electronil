@@ -1,0 +1,41 @@
+ul_items:
+  1:
+    content: "This is the first item in the <ul>."
+  2:
+    label: "This is the optional label"
+    content: "And here is the item that goes with the label."
+  3:
+    content: "Here's the third item."
+  4:
+    content: "And here's the last item."
+
+items:
+  1:
+    content: "15,000"
+
+
+grid_title:
+  "This is a Grid Title"
+
+boxes:
+  one:
+    ib_modifiers:
+      1:
+        "grid-item"
+    infobox_title:
+      "Test Title that is fairly long for a reason"
+    infobox_text:
+      "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui."
+    infobox_link:
+      "#"
+  two:
+    ib_modifiers:
+      1:
+        "grid-item"
+    infobox_title:
+      "Short for a reason"
+    infobox_text:
+      "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a."
+    infobox_title_modifiers:
+      1:
+        centered

@@ -1,0 +1,108 @@
+<div class="product">
+    {% embed "@base/layouts/grid/00-grid.twig" with {
+    "grid_blockname": "product-box"
+    } %}
+
+    {% block grid_content %}
+    {# Drupal content #}
+    {% if grid_content %}
+    {{ grid_content }}
+    {# PL content in yml #}
+    {% else %}
+    <div class="product-specs product-grid-item">
+        {% include "@atoms/02-text/00-headings/_heading.twig" with {
+        "heading_level": 1,
+        "heading": "מערכת Extra-Eyes"
+        } %}
+
+        <div class="product__sku">
+            <span class="sku-label">{{ "מקט" }}</span>:
+            <span class="sku-value">55555555555</span>
+        </div>
+
+        <div class="product__description">
+            לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית להאמית קרהשק סכעיט דז מא, מנכם למטכין נשואי מנורך. גולר
+            מונפרר סוברט לורם שבצק יהול, לכנוץ בעריר גק ליץ, הועניב היושבב שערש שמחויט - שלושע ותלברו חשלו שעותלשך וחאית
+            נובש ערששף. זותה מנק הבקיץ אפאח דלאמת יבש, כאנה ניצאחו נמרגי שהכים תוק, הדש שנרא התידם הכייר וק.
+        </div>
+
+        <hr class="hr">
+
+        {% include "@atoms/02-text/00-headings/_heading.twig" with {
+        "heading_level": 3,
+        "heading": "תכונות נבחרות",
+        "heading_modifiers": ["margin"],
+        } %}
+
+        {% include "@atoms/03-lists/00-ul.twig" with {
+
+        } %}
+
+        {% include "@atoms/_field.twig" with {
+        "label": "מחיר"
+        } %}
+
+        {% include "@atoms/06-buttons/01-button.twig" with {
+        "button_content": "הוסף לעגלה",
+        "button_url": "http://ynet.co.il"
+        } %}
+    </div>
+    <div class="product-slideshow product-grid-item">
+        {% include "@molecules/_block.twig" with {
+        "plugin_id": "5",
+        "content": "place holder for slideshow"
+        } %}
+    </div>
+    {% endif %}
+    {% endblock %}
+
+    {% endembed %}
+
+</div>
+{% embed "@base/layouts/grid/00-grid.twig" with {
+"grid_blockname": "product-box"
+} %}
+
+    {% block grid_content %}
+        {# Drupal content #}
+        {% if grid_content %}
+            {{ grid_content }}
+            {# PL content in yml #}
+        {% else %}
+            <div class="product-d product-grid-item">
+                hellow
+
+            </div>
+            <div class="product-slideshow product-grid-item">
+                slideshow
+
+            </div>
+        {% endif %}
+    {% endblock %}
+
+{% endembed %}
+{#{% embed "@base/layouts/grid/00-grid.twig" with {#}
+{#"grid_blockname": "info-box"#}
+{#} %}#}
+
+    {#{% block grid_content %}#}
+        {# Drupal content #}
+        {#{% if grid_content %}#}
+            {#{{ grid_content }}#}
+            {# PL content in yml #}
+        {#{% else %}#}
+            {#{% for box in boxes %}#}
+                {#{% set class = "info-box" %}#}
+                {#{% include "@molecules/info-box/info-box.twig" with {#}
+                {#"ib_modifiers": box.ib_modifiers,#}
+                {#"ib_blockname": box.ib_blockname,#}
+                {#"infobox_title": box.infobox_title,#}
+                {#"infobox_title_modifiers": box.infobox_title_modifiers,#}
+                {#"infobox_link": box.infobox_link,#}
+                {#"infobox_text": box.infobox_text#}
+                {#} %}#}
+            {#{% endfor %}#}
+        {#{% endif %}#}
+    {#{% endblock %}#}
+
+{#{% endembed %}#}
