@@ -1,6 +1,6 @@
 uuid: 6db0ab0c-20a6-4819-bf29-4c52546bb250
 langcode: he
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -11,7 +11,7 @@ _core:
 id: electronilem_breadcrumbs
 theme: electronilem
 region: header
-weight: 0
+weight: -3
 provider: null
 plugin: system_breadcrumb_block
 settings:

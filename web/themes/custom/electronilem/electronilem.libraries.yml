@@ -2,6 +2,8 @@ global:
   css:
     theme:
       dist/style.css: {}
+  js:
+    'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/js/bootstrap.min.js.map': { type: external, minified: true }
 
 # Example of Library syntax
 main_menu:

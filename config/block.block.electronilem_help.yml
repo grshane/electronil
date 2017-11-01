@@ -11,7 +11,7 @@ _core:
 id: electronilem_help
 theme: electronilem
 region: content
-weight: -30
+weight: -3
 provider: null
 plugin: help_block
 settings:

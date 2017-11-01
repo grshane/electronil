@@ -9,7 +9,7 @@ _core:
 id: electronilem_local_actions
 theme: electronilem
 region: content
-weight: -20
+weight: -2
 provider: null
 plugin: local_actions_block
 settings:
