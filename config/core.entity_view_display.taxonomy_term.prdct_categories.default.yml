@@ -3,10 +3,12 @@ langcode: he
 status: true
 dependencies:
   config:
+    - field.field.taxonomy_term.prdct_categories.field_ext_prdct
     - field.field.taxonomy_term.prdct_categories.field_tmwnt_qtgwryh
     - taxonomy.vocabulary.prdct_categories
   module:
     - image
+    - link
     - text
 id: taxonomy_term.prdct_categories.default
 targetEntityType: taxonomy_term
@@ -20,6 +22,18 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_ext_prdct:
+    weight: 2
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
   field_tmwnt_qtgwryh:
     weight: 1
     label: above

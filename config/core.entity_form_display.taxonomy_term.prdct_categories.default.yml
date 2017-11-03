@@ -3,11 +3,13 @@ langcode: he
 status: true
 dependencies:
   config:
+    - field.field.taxonomy_term.prdct_categories.field_ext_prdct
     - field.field.taxonomy_term.prdct_categories.field_tmwnt_qtgwryh
     - image.style.thumbnail
     - taxonomy.vocabulary.prdct_categories
   module:
     - image
+    - link
     - path
     - text
 id: taxonomy_term.prdct_categories.default
@@ -23,6 +25,14 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  field_ext_prdct:
+    weight: 32
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
   field_tmwnt_qtgwryh:
     weight: 31
     settings:
