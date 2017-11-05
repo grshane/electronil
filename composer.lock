@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "05cd3565b01a4d35aae6dbc1697a1b75",
+    "content-hash": "c73ebe590f1c467caa05364d4e3a79cd",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1563,22 +1563,22 @@
         },
         {
             "name": "drupal/commerce",
-            "version": "2.0.0",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/commerce",
-                "reference": "8.x-2.0"
+                "reference": "8.x-2.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/commerce-8.x-2.0.zip",
-                "reference": "8.x-2.0",
-                "shasum": "66428eeb51841d601f1978c42405c2c534f5cff4"
+                "url": "https://ftp.drupal.org/files/projects/commerce-8.x-2.1.zip",
+                "reference": "8.x-2.1",
+                "shasum": "3dab9fb02781b426f93043af0f61c6a304ed0bbd"
             },
             "require": {
                 "commerceguys/intl": "~0.7",
                 "drupal/address": "~1.0",
-                "drupal/core": "~8.3",
+                "drupal/core": "~8.4",
                 "drupal/entity": "~1.0",
                 "drupal/entity_reference_revisions": "~1.0",
                 "drupal/inline_entity_form": "~1.0",
@@ -1603,8 +1603,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.0",
-                    "datestamp": "1507031275",
+                    "version": "8.x-2.1",
+                    "datestamp": "1509734284",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1645,7 +1645,7 @@
         },
         {
             "name": "drupal/commerce_order",
-            "version": "2.0.0",
+            "version": "2.1.0",
             "require": {
                 "drupal/commerce": "self.version",
                 "drupal/commerce_price": "*",
@@ -1661,8 +1661,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.0",
-                    "datestamp": "1507031275",
+                    "version": "8.x-2.1",
+                    "datestamp": "1509734284",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1703,7 +1703,7 @@
         },
         {
             "name": "drupal/commerce_payment",
-            "version": "2.0.0",
+            "version": "2.1.0",
             "require": {
                 "drupal/commerce": "self.version",
                 "drupal/commerce_order": "*",
@@ -1716,8 +1716,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.0",
-                    "datestamp": "1507031275",
+                    "version": "8.x-2.1",
+                    "datestamp": "1509734284",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1819,7 +1819,7 @@
         },
         {
             "name": "drupal/commerce_price",
-            "version": "2.0.0",
+            "version": "2.1.0",
             "require": {
                 "drupal/commerce": "self.version",
                 "drupal/core": "~8.0"
@@ -1830,8 +1830,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.0",
-                    "datestamp": "1507031275",
+                    "version": "8.x-2.1",
+                    "datestamp": "1509734284",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1872,7 +1872,7 @@
         },
         {
             "name": "drupal/commerce_store",
-            "version": "2.0.0",
+            "version": "2.1.0",
             "require": {
                 "drupal/commerce": "self.version",
                 "drupal/commerce_price": "*",
@@ -1884,8 +1884,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.0",
-                    "datestamp": "1507031275",
+                    "version": "8.x-2.1",
+                    "datestamp": "1509734284",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2364,16 +2364,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.4.0",
+            "version": "8.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "d4be8e12d9e8b4db82ece760c632213247f56fa7"
+                "reference": "68d25c07b7306340900abc4020c38683a817f0eb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/d4be8e12d9e8b4db82ece760c632213247f56fa7",
-                "reference": "d4be8e12d9e8b4db82ece760c632213247f56fa7",
+                "url": "https://api.github.com/repos/drupal/core/zipball/68d25c07b7306340900abc4020c38683a817f0eb",
+                "reference": "68d25c07b7306340900abc4020c38683a817f0eb",
                 "shasum": ""
             },
             "require": {
@@ -2436,6 +2436,7 @@
                 "drupal/core-annotation": "self.version",
                 "drupal/core-assertion": "self.version",
                 "drupal/core-bridge": "self.version",
+                "drupal/core-class-finder": "self.version",
                 "drupal/core-datetime": "self.version",
                 "drupal/core-dependency-injection": "self.version",
                 "drupal/core-diff": "self.version",
@@ -2526,6 +2527,11 @@
                 "symfony/phpunit-bridge": "~3.2.8"
             },
             "type": "drupal-core",
+            "extra": {
+                "patches_applied": {
+                    "Addubg Views Suggestions (Twig Debug Fix until 8.5)": "https://www.drupal.org/files/issues/2118743-139-twig-debug-info.patch"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Drupal\\Core\\": "lib/Drupal/Core",
@@ -2547,7 +2553,7 @@
                 "GPL-2.0+"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2017-10-04T19:25:32+00:00"
+            "time": "2017-11-03T13:20:16+00:00"
         },
         {
             "name": "drupal/ctools",
@@ -4026,6 +4032,61 @@
             }
         },
         {
+            "name": "drupal/twig_tweak",
+            "version": "2.0.0-rc1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/twig_tweak",
+                "reference": "8.x-2.0-rc1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/twig_tweak-8.x-2.0-rc1.zip",
+                "reference": "8.x-2.0-rc1",
+                "shasum": "b82a96eacdbd7b5ffaf8111448270f47151dfec2"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "suggest": {
+                "symfony/var-dumper": "better dump() function for debugging Twig variables"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-2.0-rc1",
+                    "datestamp": "1505466243",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Chi",
+                    "homepage": "https://www.drupal.org/user/556138"
+                }
+            ],
+            "description": "A Twig extension with some useful functions and filters for Drupal development.",
+            "homepage": "https://www.drupal.org/project/twig_tweak",
+            "keywords": [
+                "Drupal",
+                "Twig"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/twig_tweak",
+                "issues": "https://www.drupal.org/project/issues/twig_tweak"
+            }
+        },
+        {
             "name": "drupal/typed_data",
             "version": "1.0.0-alpha1",
             "source": {
@@ -4135,17 +4196,17 @@
         },
         {
             "name": "drupal/webform",
-            "version": "5.0.0-beta19",
+            "version": "5.0.0-beta23",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/webform",
-                "reference": "8.x-5.0-beta19"
+                "reference": "8.x-5.0-beta23"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/webform-8.x-5.0-beta19.zip",
-                "reference": "8.x-5.0-beta19",
-                "shasum": "c117f293e1f009a86adfd7cff1007e4e89b2c5fd"
+                "url": "https://ftp.drupal.org/files/projects/webform-8.x-5.0-beta23.zip",
+                "reference": "8.x-5.0-beta23",
+                "shasum": "b62f90be0adf25afba7932401f8b06eea69c4b83"
             },
             "require": {
                 "drupal/core": "*"
@@ -4156,8 +4217,8 @@
                     "dev-5.x": "5.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-5.0-beta19",
-                    "datestamp": "1508532208",
+                    "version": "8.x-5.0-beta23",
+                    "datestamp": "1509673984",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -4444,12 +4505,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fourkitchens/emulsify.git",
-                "reference": "1bcbc16be10a3e6646a78aab84084a2fa9188ad1"
+                "reference": "f2b1f2cdb2dcb2c82a4d4cb0099f1bbda643a211"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fourkitchens/emulsify/zipball/1bcbc16be10a3e6646a78aab84084a2fa9188ad1",
-                "reference": "1bcbc16be10a3e6646a78aab84084a2fa9188ad1",
+                "url": "https://api.github.com/repos/fourkitchens/emulsify/zipball/f2b1f2cdb2dcb2c82a4d4cb0099f1bbda643a211",
+                "reference": "f2b1f2cdb2dcb2c82a4d4cb0099f1bbda643a211",
                 "shasum": ""
             },
             "require": {
@@ -4483,7 +4544,7 @@
             ],
             "description": "Project template for Drupal 8 themes",
             "homepage": "http://emulsify.info",
-            "time": "2017-10-25T14:32:18+00:00"
+            "time": "2017-10-31T14:18:05+00:00"
         },
         {
             "name": "gabordemooij/redbean",
@@ -4861,16 +4922,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v3.1.1",
+            "version": "v3.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "a1e8e1a30e1352f118feff1a8481066ddc2f234a"
+                "reference": "08131e7ff29de6bb9f12275c7d35df71f25f4d89"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/a1e8e1a30e1352f118feff1a8481066ddc2f234a",
-                "reference": "a1e8e1a30e1352f118feff1a8481066ddc2f234a",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/08131e7ff29de6bb9f12275c7d35df71f25f4d89",
+                "reference": "08131e7ff29de6bb9f12275c7d35df71f25f4d89",
                 "shasum": ""
             },
             "require": {
@@ -4908,7 +4969,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2017-09-02T17:10:46+00:00"
+            "time": "2017-11-04T11:48:34+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -5255,16 +5316,16 @@
         },
         {
             "name": "psy/psysh",
-            "version": "v0.8.13",
+            "version": "v0.8.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "cdb5593c3684bab74e10fcfffe4a0c8d1c39695d"
+                "reference": "91e53c16560bdb8b9592544bb38429ae00d6baee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/cdb5593c3684bab74e10fcfffe4a0c8d1c39695d",
-                "reference": "cdb5593c3684bab74e10fcfffe4a0c8d1c39695d",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/91e53c16560bdb8b9592544bb38429ae00d6baee",
+                "reference": "91e53c16560bdb8b9592544bb38429ae00d6baee",
                 "shasum": ""
             },
             "require": {
@@ -5324,7 +5385,7 @@
                 "interactive",
                 "shell"
             ],
-            "time": "2017-10-19T06:13:20+00:00"
+            "time": "2017-11-04T16:06:49+00:00"
         },
         {
             "name": "rvtraveller/qs-composer-installer",
@@ -7037,12 +7098,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/thememachine/eleven.git",
-                "reference": "e4706a49624c5752cba9111b1fe94a780f2234ff"
+                "reference": "d5ee43fbf4dc97ab0c11d63f80c68c5708211373"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thememachine/eleven/zipball/e4706a49624c5752cba9111b1fe94a780f2234ff",
-                "reference": "e4706a49624c5752cba9111b1fe94a780f2234ff",
+                "url": "https://api.github.com/repos/thememachine/eleven/zipball/d5ee43fbf4dc97ab0c11d63f80c68c5708211373",
+                "reference": "d5ee43fbf4dc97ab0c11d63f80c68c5708211373",
                 "shasum": ""
             },
             "type": "drupal-theme",
@@ -7054,7 +7115,7 @@
                 "source": "https://github.com/thememachine/eleven/tree/8.x-1.x",
                 "issues": "https://github.com/thememachine/eleven/issues"
             },
-            "time": "2017-10-08T07:21:39+00:00"
+            "time": "2017-10-27T07:52:49+00:00"
         },
         {
             "name": "twig/twig",
@@ -7170,16 +7231,16 @@
         },
         {
             "name": "webflo/drupal-core-strict",
-            "version": "8.4.0",
+            "version": "8.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webflo/drupal-core-strict.git",
-                "reference": "fa0bd8bde8245048f771a1b12de45241febdd6a8"
+                "reference": "ce354283dd2b72bdd421d9fbd6474070c2ae446e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webflo/drupal-core-strict/zipball/fa0bd8bde8245048f771a1b12de45241febdd6a8",
-                "reference": "fa0bd8bde8245048f771a1b12de45241febdd6a8",
+                "url": "https://api.github.com/repos/webflo/drupal-core-strict/zipball/ce354283dd2b72bdd421d9fbd6474070c2ae446e",
+                "reference": "ce354283dd2b72bdd421d9fbd6474070c2ae446e",
                 "shasum": ""
             },
             "require": {
@@ -7265,7 +7326,7 @@
                 "GPL-2.0+"
             ],
             "description": "Locked core dependencies",
-            "time": "2017-10-04T20:01:55+00:00"
+            "time": "2017-11-03T14:01:57+00:00"
         },
         {
             "name": "webflo/drupal-finder",

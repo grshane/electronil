@@ -1,0 +1,38 @@
+uuid: 1a8d7b0c-cab5-44f2-ae60-3cf68b5d2fac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.virtual_product.field_product_explanation
+    - field.field.node.virtual_product.field_product_image
+    - node.type.virtual_product
+  module:
+    - image
+    - text
+    - user
+id: node.virtual_product.default
+targetEntityType: node
+bundle: virtual_product
+mode: default
+content:
+  field_product_explanation:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_product_image:
+    weight: 102
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true

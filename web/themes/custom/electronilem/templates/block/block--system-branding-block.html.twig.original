@@ -1,4 +1,4 @@
-{% extends "block.html.twig" %}
+{# {% extends "block.html.twig" %} #}
 {#
 /**
  * @file
@@ -14,9 +14,13 @@
  */
 #}
 {% block content %}
-  {% include "@molecules/branding/branding.twig"
+  {% include "@atoms/04-images/00-image/image.twig"
     with {
-      "url": path ('<front>')
+      "img_url": path('<front>'),
+      "image_base_class": "logo",
+      "image_blockname": "logo",
+      "img_src": "/" ~ directory ~ "/logo.svg",
+      "img_alt": "Logo",
     }
   %}
 {% endblock %}
