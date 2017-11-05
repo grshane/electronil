@@ -1,0 +1,12 @@
+# gulp.gitignore - version 1.4.0 2017-09-26
+#
+# GULP IGNORES
+/node_modules/
+/bootstrap/node_modules/
+/bower_components/
+.idea
+.DS_Store
+gulpconfig.local.json
+
+# Advised ignores
+# **/*.map
