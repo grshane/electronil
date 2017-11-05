@@ -1,4 +1,4 @@
-uuid: 5947dca2-3e8f-4590-bd7b-2a503016e012
+uuid: 5594929e-7ceb-4f4f-ac05-f5584c9fc7ce
 langcode: he
 status: true
 dependencies:
@@ -9,7 +9,7 @@ _core:
 id: bootsass_page_title
 theme: bootsass
 region: content
-weight: -5
+weight: -50
 provider: null
 plugin: page_title_block
 settings:

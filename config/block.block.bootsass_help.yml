@@ -1,4 +1,4 @@
-uuid: aafb4d1f-deee-4666-b4e0-7f4c770c9358
+uuid: 8dd27e45-66da-4153-96e6-f3a248ea7d49
 langcode: he
 status: true
 dependencies:
@@ -11,7 +11,7 @@ _core:
 id: bootsass_help
 theme: bootsass
 region: content
-weight: -3
+weight: -30
 provider: null
 plugin: help_block
 settings:

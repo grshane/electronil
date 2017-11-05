@@ -1,6 +1,6 @@
-uuid: 4f84afde-1c20-4218-b7ef-6b1abaf4fd2d
+uuid: c92a09b5-f155-4952-b3bc-8acff9f15182
 langcode: he
-status: false
+status: true
 dependencies:
   module:
     - system
@@ -10,8 +10,8 @@ _core:
   default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
 id: bootsass_breadcrumbs
 theme: bootsass
-region: header
-weight: -3
+region: navigation
+weight: 0
 provider: null
 plugin: system_breadcrumb_block
 settings:

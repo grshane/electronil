@@ -1,4 +1,4 @@
-uuid: 68f554b8-8855-4e91-8bc4-0c7471dd7271
+uuid: c49adc0c-b6bd-4141-b078-29f65259c04e
 langcode: he
 status: true
 dependencies:
@@ -11,7 +11,7 @@ _core:
 id: bootsass_branding
 theme: bootsass
 region: header
-weight: -6
+weight: 0
 provider: null
 plugin: system_branding_block
 settings:

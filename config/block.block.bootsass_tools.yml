@@ -1,6 +1,6 @@
-uuid: 362a9f82-e804-4d05-8bcc-9f7792d555c9
+uuid: e8b8e993-1ba6-4ca3-8659-fbdeef50ffdc
 langcode: he
-status: false
+status: true
 dependencies:
   config:
     - system.menu.tools
@@ -12,13 +12,13 @@ _core:
   default_config_hash: NeHSoqm4XFqA7_0bDmR429ZZQt3LRbZMNRJTMsFyOfI
 id: bootsass_tools
 theme: bootsass
-region: header
-weight: -2
+region: sidebar_first
+weight: 0
 provider: null
 plugin: 'system_menu_block:tools'
 settings:
   id: 'system_menu_block:tools'
-  label: Tools
+  label: כלים
   provider: system
   label_display: visible
   level: 1
