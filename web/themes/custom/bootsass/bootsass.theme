@@ -1,7 +1,89 @@
 <?php
-/**
- * @file
- * Bootstrap sub-theme.
- *
- * Place your custom PHP code in this file.
+ /**
+  * @file
+  * Bootstrap sub-theme.
+  *
+  * Place your custom PHP code in this file.
+  */
+ use Drupal\taxonomy\Entity\Term;
+
+ function bootsass_theme_suggestions_page_alter(&$suggestions, &$vars) {
+
+   if (\Drupal::routeMatch()->getRouteName() == 'entity.taxonomy_term.canonical' && $tid = \Drupal::routeMatch()->getRawParameter('taxonomy_term')) {
+     $term = Term::load($tid);
+     $suggestions[] = 'page__taxonomy__' . $term->getVocabularyId();
+   }
+
+   // https://www.drupal.org/node/2521876
+   // Add content type suggestions for pages
+   if ($node = \Drupal::request()->attributes->get('node')) {
+     array_splice($suggestions, 1, 0, 'page__node__' . $node->getType());
+   }
+   // http://drupal.stackexchange.com/questions/205567/template-suggestions-based-off-url-alias-drupal-8
+   // Add suggestions according to path
+   $current_path = \Drupal::service('path.current')->getPath();
+   $result = \Drupal::service('path.alias_manager')->getAliasByPath($current_path);
+
+   $path_alias = trim($result, '/');
+   $path_alias = str_replace(['/','-'], '_', $path_alias);
+
+   $suggestions[] = 'page__path_alias__'.$path_alias;
+ }
+
+ /*
+ function bootsass_theme_suggestions_field_alter(&$suggestions, &$vars) {
+   // name pattern
+   // field--[type]---bundle--[bundle]---type--[type]---name--[name]
+   $suggestions[] = '------ above is bootsass suggestions -------';
+   $suggestions[] = 'field__type__' . $variables['element']['#field_type'];
+   $suggestions[] = 'field__name__' . $variables['element']['#field_name'];
+   $suggestions[] = 'field__bundle__' . $variables['element']['#bundle'];
+   $suggestions[] = '------ end of bootsass suggestions -------';
+ }
+ */
+
+ /**
+  * Implements hook_preprocess_user().
+  */
+ function bootsass_preprocess_user(&$variables) {
+   /** @var User $account */
+   $account = $variables['elements']['#user'];
+
+   $variables['username'] = $account->getDisplayName();
+ }
+
+ function bootsass_preprocess_html (&$variables) {
+
+     // Load specific library for pages with html attribute of RTL
+     if ($variables['html_attributes']['dir'] == 'rtl') {
+           $variables['#attached']['library'][] = 'bootsass/rtl';
+           $variables['langdir'] = 'rtl';
+     } else
+     // Load specific library for pages with html attribute of LTR
+     if ($variables['html_attributes']['dir'] == 'ltr') {
+           $variables['#attached']['library'][] = 'bootsass/ltr';
+           $variables['langdir'] = 'ltr';
+     }
+ }
+
+ /*
+ function bootsass_preprocess_region (&$variables) {
+
+     // https://drupal.stackexchange.com/questions/187519
+     $request = \Drupal::request();
+     $route_match = \Drupal::routeMatch();
+     if ($route_match->getParameter('node')) {
+       $page_title = \Drupal::service('title_resolver')->getTitle($request, $route_match->getRouteObject());
+       $variables['my_node_title'] = $page_title;
+       // echo $page_title;
+     }
+
+     $node = \Drupal::routeMatch()->getParameter('node');
+     if ($node) {
+       $variables['nid'] = $node->id();
+     } else {
+       $variables['nid'] = 'not-a-node';
+     }
+     // echo $variables['nid'];
+ }
  */

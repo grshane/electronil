@@ -2,6 +2,11 @@ global-styling:
   css:
     theme:
       css/style.css: {}
+  js:
+    js/general-js.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
 
 bootstrap-scripts:
   js:
@@ -17,3 +22,29 @@ bootstrap-scripts:
     bootstrap/assets/javascripts/bootstrap/scrollspy.js: {}
     bootstrap/assets/javascripts/bootstrap/tab.js: {}
     bootstrap/assets/javascripts/bootstrap/transition.js: {}
+
+rtl:
+  version: 3.3.4
+  css:
+    theme:
+      '//fonts.googleapis.com/css?family=Heebo': { type: external, minified: true }
+      base_css/bootstrap-rtl.min.css: {}
+      base_css/hebrew-font.css: {}
+
+ltr:
+  version: 3.3.4
+  css:
+    theme:
+      '//fonts.googleapis.com/css?family=Roboto': { type: external, minified: true }
+      base_css/english-font.css: {}
+
+font-awesome:
+  remote: https://fortawesome.github.io/Font-Awesome/
+  version: 4.7.0
+  license:
+    name: MIT
+    url: https://fortawesome.github.io/Font-Awesome/license/
+    gpl-compatible: true
+  css:
+    theme:
+      https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css: { type: external, minified: true }

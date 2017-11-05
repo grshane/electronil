@@ -1,0 +1,22 @@
+uuid: ae693403-7ce6-4d5c-a9d5-7768994b9f62
+langcode: he
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - bootsass
+_core:
+  default_config_hash: za-39d5WDUg6XvbyqSnuVYEeq6QM4qKJxW8MnoAha5A
+id: bootsass_search
+theme: bootsass
+region: header
+weight: -4
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+visibility: {  }
