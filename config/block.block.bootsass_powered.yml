@@ -1,0 +1,22 @@
+uuid: a3d67ece-7727-49af-8117-74df34f39dca
+langcode: he
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bootsass
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: bootsass_powered
+theme: bootsass
+region: navigation
+weight: 10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,20 @@
+uuid: e32e0d04-2cc9-401b-9623-29cc796caf49
+langcode: he
+status: true
+dependencies:
+  theme:
+    - bootsass
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: bootsass_local_actions
+theme: bootsass
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

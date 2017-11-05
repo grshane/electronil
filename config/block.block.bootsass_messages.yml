@@ -1,0 +1,22 @@
+uuid: f7494d57-f804-4970-ad60-70eca798b107
+langcode: he
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bootsass
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: bootsass_messages
+theme: bootsass
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

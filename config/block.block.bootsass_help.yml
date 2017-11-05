@@ -1,0 +1,22 @@
+uuid: 8dd27e45-66da-4153-96e6-f3a248ea7d49
+langcode: he
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - bootsass
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: bootsass_help
+theme: bootsass
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }
