@@ -1,6 +1,6 @@
 uuid: 4355c92c-66a6-4a3e-bf24-853a073f5641
 langcode: he
-status: true
+status: false
 dependencies:
   config:
     - system.menu.tools
@@ -13,7 +13,7 @@ _core:
 id: electronilem_tools
 theme: electronilem
 region: header
-weight: 0
+weight: -2
 provider: null
 plugin: 'system_menu_block:tools'
 settings:

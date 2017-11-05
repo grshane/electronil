@@ -1,0 +1,11 @@
+uuid: 80f5d09b-1064-48e1-a1b0-ae28d5600066
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.virtual_product
+id: node.virtual_product
+target_entity_type_id: node
+target_bundle: virtual_product
+default_langcode: site_default
+language_alterable: false

@@ -7,7 +7,8 @@
 /vendor/
 /web/core/
 /web/modules/contrib/
-/web/themes/contrib/
+/web/themes/contrib/*
+!/web/themes/contrib/emulsify/
 /web/profiles/contrib/
 /web/private/scripts/quicksilver
 

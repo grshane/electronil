@@ -7,3 +7,7 @@
 .image__img {
   @include img;
 }
+
+.logo__logo {
+  max-width: 40px;
+}

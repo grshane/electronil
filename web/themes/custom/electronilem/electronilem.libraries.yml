@@ -3,16 +3,39 @@ global:
     theme:
       dist/style.css: {}
   js:
-    dist/scripts.js: {}
+    'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/js/bootstrap.min.js.map': { type: external, minified: true }
 
-# Examples of Library syntax
-# typekit:
-#   header: true
-#   js:
-#     //use.typekit.net/TYPEKIT_ID.js: { every_page: true }
-
+# Example of Library syntax
 main_menu:
   js:
-    components/_patterns/02-molecules/menus/main-menu/main-menu.js: {}
+    dist/02-molecules/menus/main-menu/main-menu.js: {}
   dependencies:
     - core/drupal
+
+
+rtl:
+  version: 3.3.4
+  css:
+    theme:
+      '//fonts.googleapis.com/css?family=Heebo': { type: external, minified: true }
+      mystuff/hebrew-font.css: {}
+      mystuff/rtl.css: {}
+      # css/bootstrap-rtl.min.css: {}
+
+ltr:
+  version: 3.3.4
+  css:
+    theme:
+      '//fonts.googleapis.com/css?family=Open+Sans:300,400,700': { type: external, minified: true }
+      mystuff/english-font.css: {}
+
+font-awesome:
+  remote: https://fortawesome.github.io/Font-Awesome/
+  version: 4.7.0
+  license:
+    name: MIT
+    url: https://fortawesome.github.io/Font-Awesome/license/
+    gpl-compatible: true
+  css:
+    theme:
+      https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css: { type: external, minified: true }

@@ -1,0 +1,74 @@
+{#
+/**
+ * @file
+ * Theme override to display all the newspage fields in a row.
+ *
+ * Available variables:
+ * - view: The view in use.
+ * - fields: A list of fields, each one contains:
+ *   - content: The output of the field.
+ *   - raw: The raw data for the field, if it exists. This is NOT output safe.
+ *   - class: The safe class ID to use.
+ *   - handler: The Views field handler controlling this field.
+ *   - inline: Whether or not the field should be inline.
+ *   - wrapper_element: An HTML element for a wrapper.
+ *   - wrapper_attributes: List of attributes for wrapper element.
+ *   - separator: An optional separator that may appear before a field.
+ *   - label: The field's label text.
+ *   - label_element: An HTML element for a label wrapper.
+ *   - label_attributes: List of attributes for label wrapper.
+ *   - label_suffix: Colon after the label.
+ *   - element_type: An HTML element for the field content.
+ *   - element_attributes: List of attributes for HTML element for field content.
+ *   - has_label_colon: A boolean indicating whether to display a colon after
+ *     the label.
+ *   - element_type: An HTML element for the field content.
+ *   - element_attributes: List of attributes for HTML element for field content.
+ * - row: The raw result from the query, with all data it fetched.
+ *
+ * @see template_preprocess_views_view_fields()
+ */
+#}
+
+{# debug section
+<ul>
+  {% for key, value in fields %}
+    <li>{{ key }}</li>
+  {% endfor %}
+</ul>
+
+<ul>
+  {% for key, value in fields.field_product_image %}
+    <li>{{ key }}</li>
+  {% endfor %}
+</ul>
+
+
+{% for key, value in fields.field_product_image %}
+  <li>{{ key }}</li>
+{% endfor %}
+#}
+
+<ul>
+{% for key, value in fields.field_product_image.entity %}
+  <li>{{ key }}</li>
+{% endfor %}
+</ul>
+
+Title: {{ fields.title.content }}
+<br>
+Explanation: {{ fields.field_product_explanation.content }}
+<br>
+Image: {{ fields.field_product_image.content }}
+
+{# Image_url: {{ kint(fields.field_product_image) }} #}
+
+
+<!-- "card_img_src": fields.field_product_image.content -->
+
+{% include "@molecules/card/01-card.twig"
+  with {
+      "card_title": fields.title.content,
+      "card_body": fields.field_product_explanation.content
+  }
+%}

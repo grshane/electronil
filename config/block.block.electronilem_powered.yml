@@ -1,6 +1,6 @@
 uuid: 40ec39f4-652c-4921-99be-8d97bcc8dd38
 langcode: he
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -11,7 +11,7 @@ _core:
 id: electronilem_powered
 theme: electronilem
 region: header
-weight: 10
+weight: 0
 provider: null
 plugin: system_powered_by_block
 settings:

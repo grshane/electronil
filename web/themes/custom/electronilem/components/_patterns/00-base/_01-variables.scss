@@ -6,8 +6,13 @@
 // components/_patterns/00-base/_breakpoints.scss
 
 // Fonts
-$font-body: Georgia, Times, "Times New Roman", serif;
-$font-heading: "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Assistant:300,400,700&subset=hebrew');
+$font-body: 'Assistant', sans-serif;
+$font-heading: 'Assistant', sans-serif;
+
+// @import url('https://fonts.googleapis.com/css?family=VT323');
+// $font-body: VT323, Georgia, Times, "Times New Roman", serif;
+// $font-heading: "HelveticaNeue", "Helvetica", "Arial", sans-serif;
 
 // Spacing
 $space: 1rem;

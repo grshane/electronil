@@ -1,0 +1,17 @@
+uuid: 454ddb6e-8bb9-47aa-a0ef-32fb571f829e
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'EXAMPLE - Virtual Product'
+type: virtual_product
+description: ''
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

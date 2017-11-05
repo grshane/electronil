@@ -1,5 +1,27 @@
+<!--
 <header class="header">
   <div class="navigation">
     {{ content }}
+  </div>
+</header>
+-->
+
+<!-- Todo - take every element from the block, and assign it here -->
+
+<header class="header">
+  <div class="header__logo">
+    LOGO
+  </div>
+  <div class="header__navigation">
+    ---menu---
+    {% include "@molecules/menus/main-menu/main-menu.twig" %}
+  </div>
+  <div class="header__search">
+    SEARCH
+    <i class="fa fa-search" aria-hidden="true"></i>
+  </div>
+  <div class="header__cart">
+    CART
+    <i class="fa fa-shopping-bag" aria-hidden="true"></i>
   </div>
 </header>

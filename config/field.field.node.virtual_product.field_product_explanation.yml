@@ -1,0 +1,22 @@
+uuid: b7ce7a4f-56a0-47fd-9131-dd8eb1cb625c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_product_explanation
+    - node.type.virtual_product
+  module:
+    - text
+id: node.virtual_product.field_product_explanation
+field_name: field_product_explanation
+entity_type: node
+bundle: virtual_product
+label: 'Product Explanation'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

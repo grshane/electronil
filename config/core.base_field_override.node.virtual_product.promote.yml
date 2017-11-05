@@ -1,0 +1,22 @@
+uuid: 64092e90-1d45-457d-afd2-509380bee750
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.virtual_product
+id: node.virtual_product.promote
+field_name: promote
+entity_type: node
+bundle: virtual_product
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

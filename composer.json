@@ -19,7 +19,7 @@
         "drupal-composer/drupal-scaffold": "^2.0.1",
         "drupal/admin_toolbar": "^1.19",
         "drupal/block_visibility_groups": "^1.1",
-        "drupal/commerce": "^2.0",
+        "drupal/commerce": "^2.1",
         "drupal/commerce_paypal": "^1.0@beta",
         "drupal/config_direct_save": "^1.0",
         "drupal/config_installer": "^1.0",
@@ -43,10 +43,11 @@
         "drupal/slick": "^1.0",
         "drupal/slick_views": "^1.0@RC",
         "drupal/token": "^1.0",
+        "drupal/twig_tweak": "^2",
         "drupal/video_embed_field": "^1.5",
         "drupal/webform": "^5.0@beta",
         "drush/drush": "~8",
-        "fourkitchens/emulsify": "dev-master",
+        "fourkitchens/emulsify": "dev-develop",
         "rvtraveller/qs-composer-installer": "^1.1",
         "thememachine/eleven": "dev-8.x-1.x",
         "webflo/drupal-core-strict": "^8"
@@ -135,6 +136,11 @@
                 ".htaccess",
                 "web.config"
             ]
+        },
+        "patches": {
+            "drupal/core": {
+                "Addubg Views Suggestions (Twig Debug Fix until 8.5)": "https://www.drupal.org/files/issues/2118743-139-twig-debug-info.patch"
+            }
         }
     },
     "config": {
