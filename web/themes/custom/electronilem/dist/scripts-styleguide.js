@@ -1,16 +1,12 @@
-'use strict';
-
 // UNCOMMENT IF DRUPAL - see components/_meta/_01-foot.twig for attachBehaviors
 // Drupal.behaviors.accordion = {
 //   attach: function (context, settings) {
 
-(function () {
-  // REMOVE IF DRUPAL
+(function () { // REMOVE IF DRUPAL
 
   'use strict';
 
   // Set 'document' to 'context' if Drupal
-
   var accordionTerm = document.querySelectorAll('.accordion-term');
   var accordionDef = document.querySelectorAll('.accordion-def');
 
@@ -20,7 +16,8 @@
       if (accordionDef[i].classList) {
         accordionDef[i].classList.add('active');
         accordionDef[0].previousElementSibling.classList.add('is-active');
-      } else {
+      }
+      else {
         accordionDef[i].className += ' active';
         accordionDef[0].previousElementSibling.classList.add('is-active');
       }
@@ -37,13 +34,15 @@
       // Add is-active class
       if (this.classList) {
         this.classList.toggle(className);
-      } else {
+      }
+      else {
         var classes = this.className.split(' ');
         var existingIndex = classes.indexOf(className);
 
         if (existingIndex >= 0) {
           classes.splice(existingIndex, 1);
-        } else {
+        }
+        else {
           classes.push(className);
         }
         this.className = classes.join(' ');
@@ -51,12 +50,12 @@
       e.preventDefault();
     });
   }
+
 })(); // REMOVE IF DRUPAL
 
 // UNCOMMENT IF DRUPAL
 //   }
 // };
-'use strict';
 
 /**
  * @file
@@ -75,13 +74,11 @@
 //   Drupal.behaviors.mainMenu = {
 //     attach: function (context) {
 
-(function () {
-  // REMOVE IF DRUPAL.
+(function () { // REMOVE IF DRUPAL.
 
   'use strict';
 
   // Use context instead of document IF DRUPAL.
-
   var toggle_expand = document.getElementById('toggle-expand');
   var menu = document.getElementById('main-nav');
   var expand_menu = menu.getElementsByClassName('expand-sub');
@@ -102,10 +99,10 @@
       sub_menu.classList.toggle('main-menu--sub-open');
     });
   }
+
 })(); // REMOVE IF DRUPAL.
 
 // })(Drupal); // UNCOMMENT IF DRUPAL.
-'use strict';
 
 (function () {
 
@@ -123,7 +120,7 @@
    * @param {HTMLElement} link The link to listen for events on
    * @param {Number} index The index of that link
    */
-  var handleClick = function handleClick(link, index) {
+  var handleClick = function (link, index) {
     link.addEventListener('click', function (e) {
       e.preventDefault();
       goToTab(index);
@@ -135,7 +132,7 @@
    * @description Goes to a specific tab based on index. Returns nothing.
    * @param {Number} index The index of the tab to go to
    */
-  var goToTab = function goToTab(index) {
+  var goToTab = function (index) {
     if (index !== activeIndex && index >= 0 && index <= tabNavigationLinks.length) {
       tabNavigationLinks[activeIndex].classList.remove('is-active');
       tabNavigationLinks[index].classList.add('is-active');
@@ -159,5 +156,5 @@
     var link = tabNavigationLinks[i];
     handleClick(link, i);
   }
+
 })();
-//# sourceMappingURL=scripts-styleguide.js.map

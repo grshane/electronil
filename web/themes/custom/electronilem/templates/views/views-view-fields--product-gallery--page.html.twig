@@ -60,10 +60,8 @@ Title: {{ fields.title.content }}
 Explanation: {{ fields.field_product_explanation.content }}
 <br>
 Image: {{ fields.field_product_image.content }}
-
-{# Image_url: {{ kint(fields.field_product_image) }} #}
-
-
+Image Kint: {{ kint(fields.field_product_image.content) }}
+Kint2 {{ kint (fields.field_product_image) }}
 <!-- "card_img_src": fields.field_product_image.content -->
 
 {% include "@molecules/card/01-card.twig"
