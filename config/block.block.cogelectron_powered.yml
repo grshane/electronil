@@ -1,0 +1,22 @@
+uuid: c15a34ff-9f2f-4a28-b25d-85c00fa57ccb
+langcode: he
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - cogelectron
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: cogelectron_powered
+theme: cogelectron
+region: header
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

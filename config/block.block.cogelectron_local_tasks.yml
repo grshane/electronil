@@ -1,0 +1,22 @@
+uuid: c7474461-7f69-464a-9e8b-d067d4003014
+langcode: he
+status: true
+dependencies:
+  theme:
+    - cogelectron
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: cogelectron_local_tasks
+theme: cogelectron
+region: content
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 2beddd8e-17f9-45ed-903f-9ba1899ac996
+langcode: he
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - cogelectron
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: cogelectron_help
+theme: cogelectron
+region: content
+weight: -3
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

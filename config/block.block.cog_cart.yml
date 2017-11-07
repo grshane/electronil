@@ -1,0 +1,27 @@
+uuid: 69bb68e9-9d42-48b4-a1e7-1cbf8f4242e1
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_visibility_groups
+    - commerce_cart
+  theme:
+    - cog
+id: cog_cart
+theme: cog
+region: header
+weight: 0
+provider: null
+plugin: commerce_cart
+settings:
+  id: commerce_cart
+  label: Cart
+  provider: commerce_cart
+  label_display: '0'
+  dropdown: true
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

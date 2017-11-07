@@ -1,0 +1,20 @@
+uuid: 99e805e7-76e8-49eb-adb0-3722c6b533bf
+langcode: he
+status: true
+dependencies:
+  theme:
+    - cog
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: cog_local_actions
+theme: cog
+region: content
+weight: -2
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

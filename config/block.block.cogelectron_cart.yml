@@ -1,0 +1,27 @@
+uuid: 501a1b18-321c-4581-ace6-888d08b35fc5
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_visibility_groups
+    - commerce_cart
+  theme:
+    - cogelectron
+id: cogelectron_cart
+theme: cogelectron
+region: header
+weight: 0
+provider: null
+plugin: commerce_cart
+settings:
+  id: commerce_cart
+  label: Cart
+  provider: commerce_cart
+  label_display: '0'
+  dropdown: true
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

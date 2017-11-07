@@ -1,0 +1,20 @@
+uuid: ac8dd55a-1e81-4c8c-8e69-6a3c13fe3b72
+langcode: he
+status: true
+dependencies:
+  theme:
+    - cogelectron
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: cogelectron_local_actions
+theme: cogelectron
+region: content
+weight: -2
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }
