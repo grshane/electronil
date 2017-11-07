@@ -1,11 +1,13 @@
-<!--
+{#
 <header class="header">
   <div class="navigation">
     {{ content }}
   </div>
 </header>
--->
+#}
 
+
+{#
 <!-- Todo - take every element from the block, and assign it here -->
 
 <header class="header">
@@ -25,3 +27,34 @@
     <i class="fa fa-shopping-bag" aria-hidden="true"></i>
   </div>
 </header>
+#}
+
+<div class="site-header">
+  <div class="logo">
+    LOGO
+    {% block logo %}
+      {% include "@molecules/branding/branding.twig" %}
+
+      {#{{ logo }}#}
+    {% endblock %}
+  </div>
+  <div class="menu">
+    MENU
+    {% block menu %}
+      {% include "@molecules/menus/main-menu/main-menu.twig" %}
+      {#{{ menu }}#}
+    {% endblock %}
+  </div>
+  <div class="search">
+    SEARCH
+    {% block search %}
+      {{ search }}
+    {% endblock %}
+  </div>
+  <div class="cart">
+    CART
+    {% block cart %}
+      {{ cart }}
+    {% endblock %}
+  </div>
+</div>

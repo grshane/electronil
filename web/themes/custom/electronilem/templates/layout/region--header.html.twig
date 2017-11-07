@@ -12,4 +12,23 @@
  * @see template_preprocess_region()
  */
 #}
-{% extends "@organisms/site/site-header/site-header.twig" %}
+
+{#  "site_logo": elements.electronilem_branding,#}
+
+{% embed "@organisms/site/site-header/site-header.twig" %}
+  {% block logo %}
+    {% include "@molecules/branding/branding.twig" with {
+      "site_logo": "http://lorempixel.com/400/400/technics/1",
+      }
+    %}
+  {% endblock %}
+  {% block menu %}
+    {{ elements.electronilem_main_menu }}
+  {% endblock %}
+  {% block search %}
+    {{ elements.electronilem_search }}
+  {% endblock %}
+  {% block cart %}
+    {{ elements.cart }}
+  {% endblock %}
+{% endembed %}

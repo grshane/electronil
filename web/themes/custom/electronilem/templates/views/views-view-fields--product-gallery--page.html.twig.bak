@@ -49,19 +49,29 @@
 {% endfor %}
 #}
 
-<ul>
-{% for key, value in fields.field_product_image.entity %}
-  <li>{{ key }}</li>
-{% endfor %}
-</ul>
 
 Title: {{ fields.title.content }}
 <br>
 Explanation: {{ fields.field_product_explanation.content }}
 <br>
 Image: {{ fields.field_product_image.content }}
-Image Kint: {{ kint(fields.field_product_image.content) }}
-Kint2 {{ kint (fields.field_product_image) }}
+
+<br>
+Another:
+<ol>
+{% for key, value in _context  %}
+<li>{{ key }} </li>
+    <pre>{{ dump( value ) }}</pre>
+    {% if loop.index == 2 %}}
+      <pre>{{ dump( value ) }}</pre>
+    {% endif %}
+{% endfor %}
+</ol>
+
+{#
+{{ kint(_context) }}
+#}
+
 <!-- "card_img_src": fields.field_product_image.content -->
 
 {% include "@molecules/card/01-card.twig"

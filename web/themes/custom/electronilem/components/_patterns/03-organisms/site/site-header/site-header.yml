@@ -10,3 +10,7 @@ items:
     url: "#"
   - title: "תפריט 5"
     url: "#"
+site_logo:
+  "https://placeimg.com/1000/1000/nature"
+front_page_link:
+  '/pattern-lab/public/?p=viewall-pages-all'
